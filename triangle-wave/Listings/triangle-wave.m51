@@ -1,0 +1,87 @@
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                    10/18/2024  10:19:43  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22.4.0, INVOKED BY:
+C:\KEIL_V5\C51\BIN\BL51.EXE .\Objects\code.obj TO .\Objects\triangle-wave PRINT (.\Listings\triangle-wave.m51) RAMSIZE (
+>> 256)
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  .\Objects\code.obj (CODE)
+  C:\KEIL_V5\C51\LIB\C51S.LIB (?C_STARTUP)
+
+
+LINK MAP OF MODULE:  .\Objects\triangle-wave (CODE)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            IDATA   0008H     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+                    0003H     07FDH                  *** GAP ***
+            CODE    0800H     0027H     UNIT         ?PR?MAIN?CODE
+            CODE    0827H     000CH     UNIT         ?C_C51STARTUP
+            CODE    0833H     000BH     UNIT         ?PR?_DELAY?CODE
+
+
+
+OVERLAY MAP OF MODULE:   .\Objects\triangle-wave (CODE)
+
+
+SEGMENT
+  +--> CALLED SEGMENT
+---------------------
+?C_C51STARTUP
+  +--> ?PR?MAIN?CODE
+
+
+
+SYMBOL TABLE OF MODULE:  .\Objects\triangle-wave (CODE)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        CODE
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:0080H         PUBLIC        P0
+  C:0833H         PUBLIC        _delay
+  C:0800H         PUBLIC        main
+  -------         PROC          MAIN
+  -------         DO            
+  D:0006H         SYMBOL        i
+  -------         ENDDO         
+  C:0800H         LINE#         5
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                  10/18/2024  10:19:43  PAGE 2
+
+
+  C:0800H         LINE#         8
+  C:0800H         LINE#         9
+  C:0803H         LINE#         10
+  C:080FH         LINE#         11
+  C:081EH         LINE#         12
+  -------         ENDPROC       MAIN
+  -------         PROC          _DELAY
+  D:0006H         SYMBOL        n
+  C:0833H         LINE#         16
+  C:0833H         LINE#         17
+  C:083DH         LINE#         18
+  -------         ENDPROC       _DELAY
+  -------         ENDMOD        CODE
+
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY?CODE
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 0032H BYTE ( 2%) *
+******************************************************************************
+
+Program Size: data=9.0 xdata=0 code=65
+LINK/LOCATE RUN COMPLETE.  1 WARNING(S),  0 ERROR(S)

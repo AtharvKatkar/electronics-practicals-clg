@@ -1,0 +1,3 @@
+".\Objects\code.obj" 
+TO ".\Objects\triangle-wave" 
+PRINT(".\Listings\triangle-wave.m51") RAMSIZE(256) 

@@ -1,0 +1,40 @@
+A51 MACRO ASSEMBLER  CODE                                                                 10/18/2024 11:19:34 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+NO OBJECT MODULE REQUESTED
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE code.asm SET(SMALL) DEBUG PRINT(.\Listings\code.lst) OBJECT(.\Objects\c
+                      ode.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+                       1     ORG OOH;
+*** _____________________________^
+*** ERROR #A21 IN 1 (code.asm, LINE -3): EXPRESSION WITH FORWARD REFERENCE NOT PERMITTED
+0000 740A              2             MOV A, #0AH;
+0002 75F00A            3             MOV B, #0AH;
+0005 84                4             DIV AB;
+0006 A8F0              5             MOV R0, B;
+0008 75F00A            6             MOV B, #0AH;
+000B 84                7             DIV AB;
+000C A9F0              8             MOV R1, B;
+000E FA                9             MOV R2, A;
+                      10     END:
+*** _________________________^
+*** ERROR #A5 IN 10 (code.asm, LINE 10): ILLEGAL USE OF A RESERVED WORD
+A51 MACRO ASSEMBLER  CODE                                                                 10/18/2024 11:19:34 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+B. . . . . . . . .  D ADDR   00F0H   A   
+OOH. . . . . . . .    ----   -----       
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 2 ERROR(S)

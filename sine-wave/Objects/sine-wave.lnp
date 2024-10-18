@@ -1,0 +1,3 @@
+".\Objects\code.obj" 
+TO ".\Objects\sine-wave" 
+PRINT(".\Listings\sine-wave.m51") RAMSIZE(256) 
